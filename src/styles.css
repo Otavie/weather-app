@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Bad+Script&family=Bebas+Neue&family=Cookie&family=Courgette&family=Explora&family=Italianno&family=Orbitron:wght@400;500;600;700;800;900&family=Oxanium:wght@200;300;400;500;600;700;800&family=Palanquin:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&family=Supermercado+One&family=Tangerine:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zen+Kurenaido&display=swap");
 :root {
-  --ff-landing-title-bebas: 'Bebas Neue', cursive;
-  --ff-body-palandquin: 'Palanquin', sans-serif;
-  --ff-body-poppins: 'Poppins', sans-serif;
-  --ff-body-saira: 'Saira Semi Condensed', sans-serif;
-  --ff-fancy-body-bad-script: 'Bad Script', cursive;
-  --ff-fancy-body-courgette: 'Courgette', cursive;
-  --ff-fancy-body-title: 'Cookie', cursive;
-  --ff-landing-title-oxanium: 'Oxanium', cursive;
-  --ff-landing-title-orbitron: 'Orbitron', sans-serif;
+  --ff-landing-title-bebas: "Bebas Neue", cursive;
+  --ff-body-palandquin: "Palanquin", sans-serif;
+  --ff-body-poppins: "Poppins", sans-serif;
+  --ff-body-saira: "Saira Semi Condensed", sans-serif;
+  --ff-fancy-body-bad-script: "Bad Script", cursive;
+  --ff-fancy-body-courgette: "Courgette", cursive;
+  --ff-fancy-body-title: "Cookie", cursive;
+  --ff-landing-title-oxanium: "Oxanium", cursive;
+  --ff-landing-title-orbitron: "Orbitron", sans-serif;
   --primary-color: #eeeee4;
   --secondary-color: wheat;
   --primary-bg-color: rgba(0, 0, 0, 1);
@@ -20,7 +20,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -28,12 +28,12 @@ body {
 }
 
 .container {
-  background-image: url("/new_york.jpg");
+  background-image: url("new_york.jpg");
   min-height: 100vh;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,10 +44,40 @@ header {
   height: 150px;
   line-height: 150px;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#755510), color-stop(rgba(117, 85, 16, 0.75)), color-stop(rgba(117, 85, 16, 0.5)), to(rgba(117, 85, 16, 0)));
-  background: linear-gradient(180deg, #755510, rgba(117, 85, 16, 0.75), rgba(117, 85, 16, 0.5), rgba(117, 85, 16, 0));
-  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(rgba(0, 0, 0, 0.85)), color-stop(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(117, 85, 16, 0)));
-  background: linear-gradient(180deg, black, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(117, 85, 16, 0));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#755510),
+    color-stop(rgba(117, 85, 16, 0.75)),
+    color-stop(rgba(117, 85, 16, 0.5)),
+    to(rgba(117, 85, 16, 0))
+  );
+  background: linear-gradient(
+    180deg,
+    #755510,
+    rgba(117, 85, 16, 0.75),
+    rgba(117, 85, 16, 0.5),
+    rgba(117, 85, 16, 0)
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(black),
+    color-stop(rgba(0, 0, 0, 0.85)),
+    color-stop(rgba(0, 0, 0, 0.7)),
+    color-stop(rgba(0, 0, 0, 0.5)),
+    to(rgba(117, 85, 16, 0))
+  );
+  background: linear-gradient(
+    180deg,
+    black,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5),
+    rgba(117, 85, 16, 0)
+  );
 }
 
 header h1 {
@@ -83,15 +113,15 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   min-height: calc(100vh - 170px - 2.5rem);
   color: var(--primary-color);
   font-family: var(--ff-body-poppins);
@@ -105,18 +135,18 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .search {
@@ -132,7 +162,8 @@ main {
   border: none;
   border-bottom: 1px solid wheat;
   font-weight: 300;
-  -webkit-transition: width 500ms ease-in-out, background-color 1000ms ease-in-out;
+  -webkit-transition: width 500ms ease-in-out,
+    background-color 1000ms ease-in-out;
   transition: width 500ms ease-in-out, background-color 1000ms ease-in-out;
 }
 
@@ -152,7 +183,8 @@ main {
   color: var(--secondary-color);
   background-color: black;
   font-family: var(--ff-landing-title-oxanium);
-  -webkit-transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+  -webkit-transition: color 500ms ease-in-out,
+    background-color 500ms ease-in-out;
   transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
 }
 
@@ -196,11 +228,11 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: width 500ms ease-in-out;
   transition: width 500ms ease-in-out;
   display: none;
@@ -219,15 +251,15 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .temp-city,
@@ -238,13 +270,13 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   font-family: var(--ff-landing-title-oxanium);
   font-weight: bolder;
 }
@@ -270,15 +302,15 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-transition: width 500ms ease-in-out;
   transition: width 500ms ease-in-out;
   display: none;
@@ -328,14 +360,14 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .inner-footer {
