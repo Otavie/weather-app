@@ -42,8 +42,8 @@ body{
 }
 
 .container{
-    // background-image: url('/new_york.jpg');
-    background-image: url('https://github.com/Otavie/github_images/blob/main/new_york.jpg');
+    background-image: url('/new_york.jpg');
+    // background-image: url('https://github.com/Otavie/github_images/blob/main/new_york.jpg');
     min-height: 100vh;
     height: 100%;
     width: 100%;
@@ -118,7 +118,7 @@ main{
     border: none;
     border-bottom: 1px solid wheat;
     font-weight: 300;
-    transition: width 500ms ease-in-out, background-color 1000ms ease-in-out;    
+    transition: width 500ms ease-in-out, background-color 750ms ease-in-out;    
 }
 
 .search:hover{
@@ -276,10 +276,16 @@ footer{
 
 
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px){    
     .search{
+        background-color: rgba(0, 0, 0, 0.5);
         width: 60vw;
-        transition: width 500ms ease-in-out;
+        transition: width 500ms ease-in-out, background-color 750ms ease-in-out;    
+    }
+
+    .search:hover{
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
     }
 
     .weather-results{
@@ -317,9 +323,16 @@ footer{
             font-size: 2.5rem;
         }
     }
+
     .search{
         width: 50vw;
-        transition: width 500ms ease-in-out;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: width 500ms ease-in-out, background-color 750ms ease-in-out;
+    }
+
+    .search:hover{
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
     }
 
     .weather-results{
@@ -350,7 +363,13 @@ footer{
 @media only screen and (min-width: 1000px){
     .search{
         width: 40vw;
-        transition: width 500ms ease-in-out;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: width 500ms ease-in-out, background-color 750ms ease-in-out;
+    }
+
+    .search:hover{
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
     }
 
     .weather-results{

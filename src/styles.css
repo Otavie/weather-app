@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-  background-image: url("https://github.com/Otavie/github_images/blob/main/new_york.jpg");
+  background-image: url("/new_york.jpg");
   min-height: 100vh;
   height: 100%;
   width: 100%;
@@ -130,8 +130,8 @@ main {
   border: none;
   border-bottom: 1px solid wheat;
   font-weight: 300;
-  -webkit-transition: width 500ms ease-in-out, background-color 1000ms ease-in-out;
-  transition: width 500ms ease-in-out, background-color 1000ms ease-in-out;
+  -webkit-transition: width 500ms ease-in-out, background-color 750ms ease-in-out;
+  transition: width 500ms ease-in-out, background-color 750ms ease-in-out;
 }
 
 .search:hover {
@@ -354,9 +354,14 @@ footer {
 
 @media only screen and (min-width: 600px) {
   .search {
+    background-color: rgba(0, 0, 0, 0.5);
     width: 60vw;
-    -webkit-transition: width 500ms ease-in-out;
-    transition: width 500ms ease-in-out;
+    -webkit-transition: width 500ms ease-in-out, background-color 750ms ease-in-out;
+    transition: width 500ms ease-in-out, background-color 750ms ease-in-out;
+  }
+  .search:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
   }
   .weather-results {
     padding: 5%;
@@ -387,8 +392,13 @@ footer {
   }
   .search {
     width: 50vw;
-    -webkit-transition: width 500ms ease-in-out;
-    transition: width 500ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: width 500ms ease-in-out, background-color 750ms ease-in-out;
+    transition: width 500ms ease-in-out, background-color 750ms ease-in-out;
+  }
+  .search:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
   }
   .weather-results {
     width: 80%;
@@ -411,8 +421,13 @@ footer {
 @media only screen and (min-width: 1000px) {
   .search {
     width: 40vw;
-    -webkit-transition: width 500ms ease-in-out;
-    transition: width 500ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: width 500ms ease-in-out, background-color 750ms ease-in-out;
+    transition: width 500ms ease-in-out, background-color 750ms ease-in-out;
+  }
+  .search:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
   }
   .weather-results {
     width: 70%;
