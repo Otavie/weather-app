@@ -28,6 +28,7 @@ body {
 }
 
 .container {
+  background-image: url("new_york.jpg");
   background-image: url("https://github.com/Otavie/github_images/blob/main/new_york.jpg");
   min-height: 100vh;
   height: 100%;
