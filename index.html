@@ -20,15 +20,28 @@
                 <form action="#" method="post" class="search-form">
                     <div class="search-container">
                         <input type="text" name="search" id="search" class="search" placeholder="enter a city name">
-                        <button type="submit" class="search-button">Locate</button>    
+                        <button type="submit" class="search-button">Locate</button>
                     </div>
                 </form>
     
                 <div class="weather-results">
                     <div class="city-temp-time-date">
+                        <div class="temp-options">
+                            <p>
+                                <input type="radio" name="temp-units" value="celsius" checked><span> °C</span>
+                            </p>
+                            <p>
+                                <input type="radio" name="temp-units" value="fahrenheit"><span> °F</span>
+                            </p>
+                        </div>
                         <div class="temp-city">
-                            <p><span class="temp"></p>
-                            <p class="city"></p>
+                            <div class="temp">
+                                <p><span class="temp_c"></p>
+                                <p><span class="temp_f"></p>        
+                            </div>
+                            <div>
+                                <p class="city"></p>
+                            </div>
                         </div>
                         <div class="time-date">
                             <p class="local-time"></p>

@@ -1,6 +1,7 @@
 const searchForm = document.querySelector('.search-form');
 const searchInput = document.querySelector('.search');
-const temperature = document.querySelector('.temp');
+const tempC = document.querySelector('.temp_c');
+const tempF = document.querySelector('.temp_f');
 const city = document.querySelector('.city');
 const condition = document.querySelector('.condition');
 const localTime = document.querySelector('.local-time');
@@ -13,10 +14,22 @@ const weatherDetails = document.querySelector('.weather-details');
 const nullInput = document.querySelector('.null-input');
 const invalidLocation = document.querySelector('.invalid-location');
 const invalidLocationP = document.querySelector('.invalid-location p');
+const celsiusRadio = document.querySelector('input[value="celsius"]')
+const fahrenheitRadio = document.querySelector('input[value="fahrenheit"]')
 
 searchForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const location = searchInput.value.trim();
+
+    celsiusRadio.addEventListener('click', () =>{
+        tempC.style.display = 'inline';
+        tempF.style.display = 'none';
+    })
+
+    fahrenheitRadio.addEventListener('click', () =>{
+        tempC.style.display = 'none';
+        tempF.style.display = 'inline';        
+    })
 
     if (location === ""){
         nullInput.style.display = 'flex';
@@ -40,7 +53,8 @@ searchForm.addEventListener('submit', async (e) => {
             const response = await fetch(RapidAPI, options);
             const data = await response.json();
             const [date, time] = data.current.last_updated.split(" ");
-            temperature.textContent = `${data.current.temp_c} °C`;
+            tempC.textContent = `${data.current.temp_c} °C`;
+            tempF.textContent = `${data.current.temp_f} °F`;
             city.textContent = data.location.name;
             condition.textContent = data.current.condition.text;
             localDate.textContent = date;

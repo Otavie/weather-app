@@ -228,6 +228,40 @@ main {
           flex-direction: column;
 }
 
+.temp-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 1rem;
+}
+
+.temp-options p {
+  font-family: var(--ff-landing-title-orbitron);
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.temp-options p input {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 50%;
+  border: 2px solid var(--secondary-color);
+}
+
+.temp-options p input:checked {
+  background-color: red;
+}
+
 .temp-city,
 .time-date {
   width: 100%;
@@ -253,12 +287,17 @@ main {
   margin-bottom: 1rem;
 }
 
-.temp-city .temp {
+.temp-city .temp_c,
+.temp-city .temp_f {
   font-size: 2.5rem;
 }
 
 .temp-city .city {
   font-size: 1.5rem;
+}
+
+.temp_f {
+  display: none;
 }
 
 .weather-details {

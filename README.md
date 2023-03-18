@@ -6,6 +6,7 @@ This is a Weather App that provides users with up-to-date information on the wea
 - Current weather conditions displayed on the home screen
 - Hourly weather forecast for the next 24 hours
 - Search functionality to get weather information for any location
+- Option to switch between Celsius and Fahrenheit temperature units
 
 ## Technologies Used
 This app was built using the following technologies:
