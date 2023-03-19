@@ -32,7 +32,7 @@ If you would like to contribute to this project, please follow these steps:
 
 ## Credits
 
-This app was developed by [Otavie Okuoyo](https://github.com/Otavie) and is under no licensed. The weather information is provided by the OpenWeatherMap API.
+This app was developed by [Otavie Okuoyo](https://github.com/Otavie) and is under no license. The weather information is provided by the OpenWeatherMap API.
 
 ## Duration of Project
 
